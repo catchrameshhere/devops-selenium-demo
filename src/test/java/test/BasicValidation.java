@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BasicValidation extends Base {
   @Test
   public void urlValidation() {
-	  String expectedUrl = "https://www.facebook.com/";
+	  String expectedUrl = "https://en-gb.facebook.com/";
 	  String actualUrl = driver.getCurrentUrl();
 	  
 	  assertTrue(actualUrl.equals(expectedUrl), "Mismatch in url, ");
