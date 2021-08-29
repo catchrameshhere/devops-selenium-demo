@@ -2,6 +2,7 @@ package test;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class BasicValidation extends Base {
@@ -15,8 +16,11 @@ public class BasicValidation extends Base {
   
   @Test
   public void pageTitleValidation() {
-	  String expectedPageTitle = "Facebook â€“ log in or sign up";
+	  String expectedPageTitle = "Facebook – log in or sign up";
 	  String actualPageTitle = driver.getTitle();
+	  
+	  Reporter.log("Expected Page Title = " + expectedPageTitle);
+	  Reporter.log("Actual Page Title = " + actualPageTitle );
 	  
 	  assertTrue(actualPageTitle.equals(expectedPageTitle), "Mismatch in the page title, ");
   }

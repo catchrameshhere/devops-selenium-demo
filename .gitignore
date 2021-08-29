@@ -1,6 +1,7 @@
 .classpath
 .project
 .settings/
+test-output
 
 # Compiled class file
 *.class
