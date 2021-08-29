@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BasicValidation extends Base {
   @Test
   public void urlValidation() {
-	  String expectedUrl = "https://en-gb.facebook.com/";
+	  String expectedUrl = "https://www.facebook.com/";
 	  String actualUrl = driver.getCurrentUrl();
 	  
 	  assertTrue(actualUrl.equals(expectedUrl), "Mismatch in url, ");
@@ -15,7 +15,7 @@ public class BasicValidation extends Base {
   
   @Test
   public void pageTitleValidation() {
-	  String expectedPageTitle = "Facebook – log in or sign up";
+	  String expectedPageTitle = "Facebook â€“ log in or sign up";
 	  String actualPageTitle = driver.getTitle();
 	  
 	  assertTrue(actualPageTitle.equals(expectedPageTitle), "Mismatch in the page title, ");
